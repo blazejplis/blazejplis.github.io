@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Open+Sans|Trirong" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    
+
+
+<script>
+$(document).ready(function() {
+    $(".fadein").hide(0).delay(200).fadeIn(1200);
+    $(window).scroll( function(){
+    
+       
+        $('.fadein-onscroll').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_object*0.7 ){
+                
+                $(this).animate({'opacity':'1'},1400);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem ipsum</title>
+
+    </head>
+    <body>
+            <div class="container-first">
+<div class="header fadein"><div class="img-container"><img src="img/logo1.png"></div>
+    <p class="font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et eros dignissim magna euismod congue. 
+        Suspendisse malesuada sem nisl. Curabitur eleifend erat sit amet augue porta, a ultrices metus consequat.
+         Quisque sit amet ornare nisl, sed faucibus lacus. Quisque volutpat accumsan libero, quis rhoncus neque venenatis non.</p>
+         <a href="#" class="menu-button">MENU</a>
+</div>
+<div class="photo fadein"></div>
+            </div>
+
+            <div class="container-second">
+<div class="photo2 fadein-onscroll"></div>
+<div class="header fadein-onscroll"><h2>Trochę o nas</h2>
+    <p class="font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et eros dignissim magna euismod congue. 
+        Suspendisse malesuada sem nisl. Curabitur eleifend erat sit amet augue porta, a ultrices metus consequat.
+         Quisque sit amet ornare nisl, sed faucibus lacus. Quisque volutpat accumsan libero, quis rhoncus neque venenatis non.</p>
+</div>
+            </div>
+            <div class="container-third fadein-onscroll">
+        <div class="opis"><h2>Galeria kawiarni</h2>
+            <p class="font">Quisque sit amet ornare nisl, sed faucibus lacus. Quisque volutpat accumsan libero, quis rhoncus neque venenatis non.</p>
+            </div>
+
+            </div>
+            <div class="container-fourth fadein-onscroll">
+        <a data-fancybox="gallery" href="img/galeria/duze/1.jpg"><div class="zoom-effect-container"><div class="image-card"><img src="img/galeria/male/1.jpg"></div></div></a>
+        <a data-fancybox="gallery" href="img/galeria/duze/2.jpg"><div class="zoom-effect-container"><div class="image-card"><img src="img/galeria/male/2.jpg"></div></div></a>
+        <a data-fancybox="gallery" href="img/galeria/duze/3.jpg"><div class="zoom-effect-container"><div class="image-card"><img src="img/galeria/male/3.jpg"></div></div></a>
+        <a data-fancybox="gallery" href="img/galeria/duze/4.jpg"><div class="zoom-effect-container"><div class="image-card"><img src="img/galeria/male/4.jpg"></div></div></a>
+        <a data-fancybox="gallery" href="img/galeria/duze/5.jpg"><div class="zoom-effect-container"><div class="image-card"><img src="img/galeria/male/5.jpg"></div></div></a>
+        <a data-fancybox="gallery" href="img/galeria/duze/6.jpg"><div class="zoom-effect-container"><div class="image-card"><img src="img/galeria/male/6.jpg"></div></div></a>
+            </div>
+
+            <footer class="footer">
+<div class="info">
+    <ul class="ikony">
+            <li><a href="#"><i class="fab fa-facebook-f ikona"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram ikona"></i></a></li>
+            <li><a href="#"><i class="fas fa-envelope ikona"></i></a></li>     
+    </ul>
+    <ul class="adres">
+        <li>+48 555 641 222</li>
+        <li>ul.1 Maja 86</li>
+        <li>Jelenia Góra 58-500</li>
+        <li>Pn-Pt | 8-19</li>
+        <li>So-Nd | 9-18</li>
+    </ul>
+            </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    </body>
+
+</html>
