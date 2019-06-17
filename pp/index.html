@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113897226-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113897226-1');
+</script>
+
+	<link rel="icon" href="prosty.png" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<META NAME=”ROBOTS” CONTENT=”All” />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="Stylesheet" type="text/css" href="style.css" />
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Martel|Montserrat|Lato" rel="stylesheet">
+	<title>Tworzenie stron internetowych na zamówienie- PROSTYWYBÓR.EU</title> 
+    <meta name="description" content="Oferujemy zaprojektowanie oraz stworzenie strony internetowej dla Twojej firmy lub biznesu. Skontaktuj się z nami już teraz!" />
+</head>
+<body>
+<a id="myBtn" href="#home"><i class="far fa-arrow-alt-circle-up fa-3x"></i></a>
+<div id="home" class="header">
+
+				
+<nav>
+    
+    <ul>
+        <li class="left-nav"><div class=logo></div></li>      
+        <li class="hamburger" ><a href="javascript: void(0);" onclick="menuresp()"><i  class="fa fa-bars fa-2x" aria-hidden="true"></i></a></li>   
+        <li class="right-nav"><a href="#home">HOME</a></li>
+        <li class="right-nav"><a href="#uslugi">Usługi</a></li>
+        <li class="right-nav"><a href="#kontakt">Kontakt</a></li>
+
+    </ul>
+
+</nav>
+
+
+</div>
+
+<section class="content">
+    <div class="responsywne-menu-container">
+        <div id="mobilemenu" class="display">
+        <ul>
+            <hr />
+            <li><a href="#home">Home</a></li>
+            <hr />
+            <li><a href="#uslugi">Usługi</a></li>
+            <hr />
+            <li><a href="#kontakt">Kontakt</a></li>
+            <hr />
+        </ul>
+        </div></div>
+	<div class="container">
+		<header><h1>Strony internetowe na każdy portfel</h1>
+        <p>Serwis prostywybor.eu oferuje tworzenie niewymagających finansowo stron internetowych dla osób prywatnych oraz dla firm</p></header>
+	</div>		
+</section>
+
+
+<section id="uslugi" >
+<ul class="listing">
+  <li>
+      
+
+    <span><i class="fas fa-desktop fa-5x"></i>&nbsp;<i class="fas fa-mobile fa-5x ikony"></i></span>
+    <h3>Responsywne strony internetowe</h3>
+    <div class="body"><p>Tworzenie responsywnych stron internetowych, które są dopasowane do ekranu komputera oraz do ekranów urządzeń mobilnych</p></div>
+    </li>
+   <li>
+       <span><i class="fab fa-wordpress-simple fa-5x"></i></span>
+     <h3>Systemy zarządzania treścią</h3>
+     <div class="body"><p>Opcjonalnie możliwe jest użycie technologii Wordpress, dzięki której można łatwo dodawać bądź usuwać treści z witryny</p></div>
+     
+   </li>
+   <li>
+       <span><i class="far fa-check-square fa-5x"></i></span>
+     <h3>Dopasowanie do wymagań klienta</h3>
+     <div class="body"><p>Staramy się na bieżąco współpracować z klientem oraz wdrażać jego pomysły oraz ewentualne poprawki do naszych projektów</p> 
+</div>
+     
+    </li>
+    <li>
+        <span><i class="fas fa-pen-square fa-5x"></i></span>
+        <h3>Szereg usług marketingowych</h3>
+        <div class="body"><p>Oferujemy prowadzenie stron, serwisów, blogów, założenie kont na serwisach społecznościowych oraz opiekę nad nimi</p></div>
+     
+    </li>
+     <li>
+        <span><i class="fab fa-sass fa-5x"></i></span>
+        <h3>Zastosowanie najnowszych techologii</h3>
+        <div class="body"><p>Do tworzenia naszych projektów używamy najnowszych technologii, aby nasze strony wyglądały nowocześnie</p></div>
+     
+    </li>
+        </ul>
+</section>
+<section class="mail">
+	<div class="container">
+<h2>Zostaw nam email, odezwiemy się!</h2>
+		<form method="post" action="https://formspree.io/kontakt@prostywybor.eu">
+          <input type="email" name="email" placeholder="Wpisz email...">
+          <input type="text" name="trapit" value="" style="display:none">
+          <button type="submit" class="button">Wyślij!</button>
+        </form>
+	</div>
+</section>
+<section class="partners">
+<h2>Współpracowaliśmy z:</h2>
+<article class="partners-grid">
+<div class="partner1"><img src="lunaria.png"></div>
+<div class="partner2"><img src="olszewski.png"></div>
+<div class="partner3"><img src="akcept.png"></div>
+
+
+</article>
+
+</section>
+
+<footer id="kontakt">
+<a href="tel:+48 576 150 904"><i class="fa fa-phone" aria-hidden="true"></i>  +48 576 150 904</a><br />
+<a href="mailto:kontakt@prostywybor.eu"><i class="fa fa-envelope" aria-hidden="true"></i> kontakt@prostywybor.eu</a><br />
+<a href="https://www.facebook.com/prostywybor.eu/"><i class="fab fa-facebook-square fa-2x"></i></a><br />
+
+</footer>
+    
+<script>
+function menuresp(){
+    var x = document.getElementById("mobilemenu");
+    if(x.className === "display"){
+        x.className += " menuresponsywne";
+    }
+    else{
+        x.className = "display";
+    }
+}
+    
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}    
+</script>
+<div class="modal"></div>
+</body>
+</html>
